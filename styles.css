@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0D1B2A;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 0.5rem;
+}
+
+nav ul li .cta {
+    background-color: #FF4C4C;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    background-color: #FF4C4C;
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cta:hover {
+    background-color: #ff3333;
+}
+
+.cursos, .comunidad, .testimonios, .blog {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.cursos h2, .comunidad h2, .testimonios h2, .blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.cursos-grid, .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.curso, .blog-post {
+    background-color: #1B263B;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.curso h3, .blog-post h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.testimonios-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimonio {
+    background-color: #1B263B;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+footer {
+    background-color: #0D1B2A;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .social-icons a {
+    color: #FFFFFF;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #FF4C4C;
+}
