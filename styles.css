@@ -1,0 +1,237 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    color: #FAFAFA;
+    background-color: #121212;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1E1E1E;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ec4d58;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura completa de la pantalla */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra toda la sección */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegura que la imagen esté detrás del texto */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto tanto vertical como horizontalmente */
+    text-align: center; /* Centra el texto */
+    color: #FAFAFA; /* Color blanco para el texto */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    padding: 0 1rem; /* Agrega algo de espacio alrededor del texto */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Tamaño de fuente grande para el encabezado */
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para mejorar el contraste */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 1); /* Sombra suave para el párrafo */
+}
+
+.primary-btn {
+    padding: 1rem 2rem;
+    color: #FAFAFA;
+    background-color: #ec4d58;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.primary-btn:hover {
+    background-color: #e53747;
+}
+
+/* Nosotros Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.about-image img {
+    aspect-ratio: 3 / 1;
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212; /* Fondo oscuro para toda la sección */
+    padding: 2rem;
+}
+
+.login-card {
+    background-color: #1E1E1E; /* Fondo oscuro para la card */
+    padding: 2rem; /* Padding dentro de la tarjeta */
+    border-radius: 15px; /* Bordes redondeados */
+    width: 100%;
+    max-width: 600px; /* Ancho máximo de la card */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    text-align: center;
+    position: relative;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+.login-card .login-logo {
+    max-width: 250px; /* Ajusta este valor según el tamaño deseado */
+    width: 100%; /* Hace que el logo ocupe el 100% del ancho disponible hasta el límite de max-width */
+    height: auto; /* Mantiene la relación de aspecto original */
+    margin-bottom: 1rem;
+}
+
+
+h2 {
+    color: #FAFAFA;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.login-card input {
+    width: calc(100% - 2rem); /* Ajusta el ancho para que respete el padding de la tarjeta */
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    border: 2px solid #333;
+    background-color: #2A2A2A;
+    color: #FAFAFA;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del campo */
+}
+
+.login-card input:focus {
+    border-color: #ec4d58; /* Cambio de color al hacer focus */
+    outline: none;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ec4d58;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.primary-btn:hover {
+    background-color: #e53747;
+}
+
+.register-link {
+    color: #ec4d58;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1E1E1E;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #FAFAFA;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: #ec4d58;
+}
