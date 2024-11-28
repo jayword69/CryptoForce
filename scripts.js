@@ -5,3 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("login").scrollIntoView({ behavior: "smooth" });
     });
 });
+document.querySelector(".primary-btn").addEventListener("click", () => {
+    window.location.href = "ofertas.html";
+});
